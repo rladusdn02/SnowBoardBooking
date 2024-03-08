@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign in</title>
+    <style>
+        h1{text-align: center; background-color: aquamarine;}
+        div{padding-left: 100px; background-color: azure; padding-top: 10px; padding-bottom: 10px;}
+        .center {display: block; margin-left: auto;
+                  margin-right: auto; width: 50%; text-align: center}
+        .right{text-align: right; margin-right: 30px;}
+    </style>
+</head>
+<body>
+ <nav class="right">
+  <a href="index.html">홈페이지로 돌아가기</a>
+ </nav>
+<header>
+    <h1>회원가입</h1>
+</header>
+<article>
+    <form>
+    <div>
+        <h3>아이디</h3>
+        <input type="text" id="id" class="int check" maxlength="20">
+        <h3>비밀번호</h3>
+        <input type="password" id="pw" class="int check" maxlength="20">
+        <h3>비밀번호 재확인</h3>
+        <input type="password" id="pwCheck" class="int check" 
+                     maxlength="20">
+        <h3>성명</h3>
+        <input type="text" id="name" class="int check" maxlength="20">
+        <h3>전화번호("-" 제외)</h3>
+        <input type="text" id="phoneNum" class="int check" maxlength="11">
+        <h3>자택주소</h3>
+        <input type="text" id="address" placeholder="우편번호" readonly>
+        <input type="button" id="addressButton" value="우편번호 찾기" readonly>
+        <input type="text" id="roadAddress"  placeholder="도로명주소" readonly>
+        <input type="text" id="jibunAddress" placeholder="지번주소" readonly>
+        <input type="text" id="extraAddress" class="d_form mini line" placeholder="참고주소" readonly>
+        <input type="text" id="detailAddress" class="d_form mini line addressCheck" placeholder="상세주소" >
+    </div>
+        <br><input type="submit" value="전송하기">
+    </form>
+    </article>
+<footer>
+    <hr>
+    <p class="center">Copyright © 소프트웨어융합전공 2211366 김연우<br>All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Page</title>
+    <style>
+    
+    .right{text-align: right; margin-right: 30px;}
+        
+    </style>
+</head>
+<body>
+   <nav class="right">
+  <a href="index.html">홈페이지로 돌아가기</a>
+ </nav>
+    <h1 align="center">데크 주문서</h1>
+    <hr>
+    <div style="text-align: left; padding-top: 30px; padding-left: 50px; padding-right: 50px;">
+    <script type="text/javascript">
+    var foot_size=prompt("발 사이즈를 입력하세요") 
+    var height=prompt("키를 입력하세요");
+    var weight=prompt("몸무게를 입력하세요");
+    var side=prompt("본인이 편한 방향을 입력하세요 \n 왼쪽 = l, 오른쪽 = r")
+    var height_deck=height-18;
+    var weight_deck=weight-10+100
+    if (side=="r")
+        style="구피";
+        
+    else if (side=="l")
+        style="레귤러";
+        
+    else{alert("방향을 잘못 입력하셨습니다.")
+            }
+    
+    document.write("발 사이즈 : "+foot_size+"mm");
+    document.write("<br> 키 : "+height+"cm<br>");
+    
+    document.write("<hr><br> 당신의 보드 스타일은 '"+style+"' 입니다.");
+    document.write("<br><당신에게 잘 맞는 보드 사이즈>");
+    document.write("<br>| 키를 기준 : "+height_deck+"cm");
+    document.write("<br>* 데크를 세운 상태에서 코와 턱 사이, 약 키-(15~20cm) ");
+    document.write("<br>| 몸무게를 기준 : "+weight_deck+"cm");
+    document.write("<br>* 자기몸무게(kg) – (7~13kg) +100");
+    
+    </script>
+    </div>
+    <br>
+    <hr>
+<p align="center">추천서가 정석은 아니므로 매장에 직접 방문하시어 주문을 권장드립니다.</p>
+<h3 align="center">헬멧도 같이 주문하여 안전한 보딩 하시길 바랍니다.</h3>
+</body>
+<footer>
+    <hr>
+    <p align="center">Copyright © 소프트웨어융합전공 2211366 김연우<br>All rights reserved.</p>
+</footer>
+</html>
